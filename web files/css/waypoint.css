@@ -1,0 +1,396 @@
+* {
+    text-align: left;
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+    background-color: #40C5A7;
+}
+
+main {
+	overflow: auto;
+ }
+
+.chat-box {
+    position:fixed;
+    right:15px;
+    bottom:75px;
+}
+
+.mainNav {
+	margin: 0 auto;
+    height: 14%;
+    width: 100%;
+    background-color: #2A7A6A;
+    overflow: hidden;
+    position:fixed;
+    top: 0;
+    z-index: 100;
+    transition: top 3s;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #40C5A7;
+}
+
+.mainNav .icon {
+			  display: none;
+			} 
+
+.homelogo {
+  max-width: 7%;
+  height: auto;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    float: left;
+}
+
+
+.mainNav a {
+    font-size: 18px;
+    display: inline-block;
+    margin: 3% 2%;
+    float: left;
+}
+
+.navon {
+    color: #FFF593;
+}
+
+.searchbar {
+  max-width: 250px;
+  height: auto;
+  margin: 2%;
+  flex: auto;
+  float:right;      
+  }    
+
+/*BEGIN FLEX BOX STUFF HERE*/
+
+*{box-sizing: border-box;}
+   
+/*CSS FOR NON-TOOL PAGES*/
+
+.columnbox{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.module{
+    flex: auto;
+    background-color: #2A7A6A;
+    border-radius: 9px;
+    width: 53%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 3%;    
+}
+
+.module img{
+    margin: 5%;
+    float:left;
+}
+
+.module h1 {
+    color: #FFF593;
+    text-align: left;
+    font-size: 22pt;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    }
+
+.module h2 {
+    color: white;
+    text-align: left;
+    font-size: 13pt;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+.smallmodule{
+    flex: auto;
+    background-color: #2A7A6A;
+    border-radius: 9px;
+    width: 25%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 3%;    
+}
+
+.smallmodule h1 {
+    color: #FFF593;
+    text-align: center;
+    font-size: 22pt;
+    margin: 5%;
+ 
+    }
+
+.smallmodule h2 {
+    color: white;
+    text-align: center;
+    font-size: 13pt;
+    margin: 5%;
+}
+
+.smallmodule img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+
+/*BEGIN TOOL PAGE CSS*/
+
+        .toolsection {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+            margin-top: 10%;
+        }
+        
+        /* create 2 equal columns that sit next to each other by defining flex: 50% */
+        
+        .toolmodule {
+            flex:50%;
+            max-width:50%;
+            padding: 0 4px;
+            }
+        
+        .toolmodule img {
+            margin-top: 3%;
+            vertical-align: middle;
+        }
+        
+        .topics {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+           }
+
+
+        /* create 4 equal columns that sit next to each other by defining flex: 25% */
+
+        .topicmodule {
+            flex:25%;
+            max-width:25%;
+            padding: 0 2%;
+            margin-bottom: 5%;
+            }
+        
+        .topicmodule img {
+            margin-top: 3%;
+            vertical-align: middle;
+        }
+
+
+
+.toolbutton {
+    height: auto;
+    width: 80%;
+    background-color: #2A7A6A;
+    border-radius: 9px;
+    margin: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 15px;
+    overflow:auto;
+  
+}
+
+.tooltitle {
+    color: #FFF593;
+    text-align: center;
+    font-size: 22pt;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    height: auto;
+    width: 100%;
+}
+
+.topictitle {
+    color: white;
+    text-align: center;
+    font-size: 16pt;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: auto;
+    width: 100%;
+}
+
+.topicbox{
+    height: auto;
+    width: 90%;
+    background-color: #2A7A6A;
+    border-radius: 9px;
+    margin: 3%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 3%;
+    overflow:auto;
+}
+
+
+/* media queries tell it how to adjust based on screen size. Below, flex will become 1 column by using 100% instead of 2 columns using 50% when screen is below XXXXpx */
+    
+
+@media screen and (max-width: 800px) {
+            
+    .toolsection{margin-top: 0%;}
+    
+    .toolmodule {flex: 100%;
+                    max-width: 100%;}
+             
+    .topicmodule {flex: 50%;
+                    max-width: 50%;}
+             
+             .mainNav {position:static;
+                      }
+        }
+
+@media screen and (max-width: 1200px) {
+.homelogo {
+  max-width: 10%;
+  height: auto;
+    }
+    
+    .smallmodule{
+        width: 40%
+    }
+    
+    
+}
+
+@media screen and (max-width: 800px) {
+	
+    .homelogo {
+      max-width: 16%;
+      height: auto;
+    }
+    
+    .mainNav a {display: none;}
+			  .mainNav .icon {
+			    float: right;
+			    display: block;
+                text-decoration: none;  
+			                  } 
+              .mainNav .searchbar{
+                float: none;
+                            }
+    .module{
+        width: 94%
+    }
+    
+    .smallmodule{
+        width: 94%
+    }
+    
+    .smallmodule img {
+    width: 40%;
+    height: auto;
+    
+}
+    
+
+
+@media screen and (max-width: 800px) {
+			  .mainNav.responsive {position: relative;}
+			  .mainNav.responsive .icon {
+			    position: absolute;
+			    right: 0;
+			    top: 0;  
+			  }
+			  .mainNav.responsive a {
+			    float: none;
+			    display: block;
+			    text-align: center;
+                margin: 7%;
+                font-size: 24px;
+                text-decoration: none;
+			  }
+              
+              .mainNav.responsive .homelogo {
+			  	display: none;
+			  }
+
+    
+              .mainNav.responsive .searchbar {
+			  	display: none;
+			  }
+                
+    
+    
+			}
+
+
+
+
+
+
+
+
+
+
+
+/*OLD WIDTH RE-SIZING
+
+
+ @media (max-width: 900px) {
+        .toolsection {
+            margin-top: 10%;
+        }
+     
+     .mainNav {
+    height: 13%;
+}
+     
+      .module {
+            width: 80%;
+        }  
+     .topmodule {
+            width: 80%;
+         margin-top: 20%;
+        }  
+}
+
+@media (max-width: 700px) {
+        .toolsection {
+            margin-top: 20%;
+        }
+     
+     .mainNav {
+    height: 23%;      
+}
+    
+    
+}
+
+ @media (max-width: 600px) {
+        .toolsection {
+            margin-top: 25%;
+        }
+     
+     .mainNav {
+    height: 23%;
+}
+}
+
+@media (max-width: 500px) {
+        .toolsection {
+            margin-top: 53%;
+        }
+     
+     .mainNav {
+    height: 33%;
+}
+}
+
+*/
