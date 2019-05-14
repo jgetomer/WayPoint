@@ -337,12 +337,15 @@ main {
     }
     
     .navlink {display: none;}
-			  .mainNav .icon {
+			  
+    .mainNav .icon {
 			    float: right;
 			    display: block;
-                text-decoration: none;  
+                text-decoration: none;
+                margin-right: 2%;
 			                  } 
-              .mainNav .searchbar{
+              
+    .mainNav .searchbar{
                 float: none;
                             }
     .module{
