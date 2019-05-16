@@ -180,9 +180,18 @@ main {
 .welcomebox h2{
     margin-top: 0%;
     margin-bottom: 1%;
-    margin-left: 4%;
+    margin-left: 6%;
     font-size:2.7vw;
 }
+
+.welcomebox h3{
+    margin-top: 0%;
+    margin-bottom: 1%;
+    margin-left: 4%;
+    font-size:1.7vw;
+    
+}
+
 
 .welcomebox img{
     display: block;
